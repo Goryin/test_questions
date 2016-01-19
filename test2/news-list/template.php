@@ -81,7 +81,7 @@ $this->setFrameMode(true);
 
 		<?/*блок "Нравится пользователям"*/?>
 		<div>
-			<a href="/ajax/?ITEM_ID=<?=$arItem["ID"]?>" class="user_like">
+			<a href="/ajax.php/?ITEM_ID=<?=$arItem["ID"]?>" class="user_like">
 				<?if(in_array($USER->GetId(), $arItem["PROPERTIES"]["USER_LIKE"]["VALUE"])):?>
 					Не нравится
 				<?else:?>
